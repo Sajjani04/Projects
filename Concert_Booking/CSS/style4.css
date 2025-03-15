@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Review and Highlight List Containers */
+.review-list, .highlight-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Review and Highlight Items */
+.review-item, .highlight-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 20px); /* Two items per row */
+    display: flex;
+}
+
+.review-item img, .highlight-item img {
+    width: 150px;
+    height: auto;
+}
+
+.review-details, .highlight-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.review-details h3, .highlight-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-details p, .highlight-details p {
+    margin-bottom: 10px;
+}
+
+.review-details strong {
+    color: #333;
+}

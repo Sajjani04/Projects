@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('../Images/BG2.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes the full viewport height */
+}
+
+/* Header Styling */
+header {
+    background-color: #fff ; /* Transparent background for header */
+    color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+header .logo h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+    color: #562969;
+}
+
+/* Search Bar Styling */
+header .search-bar {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000; /* Subtle black border */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the border-radius applies to the whole container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9); /* Soft shadow for a professional look */
+}
+
+header .search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 500px;
+    border: none; /* Removes the default input border */
+    outline: none; /* Removes the default outline */
+    border-right: 1px solid #000; /* Adds a separator between input and button */
+    transition: box-shadow 0.4s ease-in-out; /* Smooth focus effect */
+}
+
+header .search-bar input[type="text"]:focus {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow when focused */
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none; /* Removes the default button border */
+    background-color:#562969; /* Dark background for the button */
+    color: #fff; /* White text for contrast */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease; /* Smooth background and scale effect */
+}
+
+header .search-bar button:hover {
+    background-color: #555; /* Lighter background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+header .search-bar button i {
+    margin-right: 5px; 
+    color: #fff;
+}
+
+
+
+/* City Dropdown Styling */
+header .city {
+    margin-left: 100px;
+}
+
+header .city select {
+    padding: 5px;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+header .city select:hover {
+    background-color: #f4f4f4;
+}
+/* Sign In Button Styling */
+header .sign-in {
+    
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+header .sign-in button {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #562969;
+    color:#fff;
+    cursor: pointer;
+}
+
+header .sign-in button:hover {
+    background-color: #562969;
+}
+
+header .Log-in button {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color:#562969;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .Log-in button:hover {
+    background-color: #562969;
+}
+
+/*Navigation bar styling*/
+nav {
+    background-color: #444;
+    font-size: large;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Dropdown Menu Styling */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #666;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.intro-box {
+    background-color: white; /* White background */
+    padding: 30px; /* Inner spacing */
+    margin: 100px auto; /* Center the box with some margin */
+    width: 60%; /* Width of the box relative to the page */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the box */
+}
+
+.intro-box h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro-box p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #666; /* Slightly lighter text color */
+}
+
+.intro-box .quote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555; /* Color for the quote */
+    margin-top: 20px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConcertBooker</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>ConcertBooker</h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for events, artists, or venues...">
+            <button type="button">
+                <i class="fa fa-search"></i> <!-- Font Awesome Search Icon -->
+            </button>
+
+        </div>
+        <div class="city">
+            
+            <select>
+                <option value="" disabled selected>Choose City</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="bengaluru">Bengaluru</option>
+                <option value="chennai">Chennai</option>
+                <option value="delhi">Delhi</option>
+                <option value="goa">Goa</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="jaipur">Jaipur</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+            </select>
+        </div>
+
+        <div class="sign-in">
+            <a href="../HTML/Sign-up.html"> <button type="button">Sign Up</button> </a>
+        </div>
+
+        <div class="Log-in">
+            <a href="../HTML/login.html"><button type="button">Login</button></a>
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../HTML/Music.html">Home</a></li>
+
+            <li><a href="../HTML/about.html">About Us</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Concerts</a>
+                <div class="dropdown-content">
+                    <a href="../HTML/Concert_Booking.html">Upcoming Concerts</a>
+                    <a href="../HTML/Past_Concerts.html">Past Concerts</a>
+                    <a href="../HTML/Review.html">Concert Reviews & Highlights</a>
+                    
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Tickets</a>
+                <div class="dropdown-content">
+                    <a href="../HTML/buy_ticket.html">Buy Tickets</a>
+                    <a href="../HTML/sell_ticket.html">Sell Tickets</a>
+                    <a href="../HTML/support.html">Ticket Support</a>
+                </div>
+            </li>
+            <li class="Account">
+                <a>
+                    <i class="fas fa-user"></i> Account
+                </a>
+                <div class="dropdown-content">
+                    <a href="../HTML/profile.html">Profile</a>
+                    <a href="../HTML/history.html">Purchased History</a>
+                    <a href="../HTML/setting.html">Settings</a>
+                </div>
+            </li>
+
+        </ul>
+        
+    </nav>
+<main>
+        <section id="concerts">
+            <div class="content">
+                <div class="intro-box">
+                    <h1>Welcome to ConcertBooker</h1>
+                    <p>Your ultimate destination for live music experiences</p>
+                    <p class="quote">"Where words fail, music speaks." - Hans Christian Andersen</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

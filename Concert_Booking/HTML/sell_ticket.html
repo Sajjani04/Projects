@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Ticket</title>
+    <link rel="stylesheet" href="../CSS/style10.css"> <!-- Update the path as needed -->
+</head>
+<body>
+    <header>
+            <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../HTML/Music.html">Home</a></li>
+           
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="sell-tickets">
+            <h2>List Your Tickets</h2>
+            <form action="submit-ticket-listing.html" method="post">
+                <label for="concert-name">Concert Name:</label>
+                <input type="text" id="concert-name" name="concert-name" required>
+                
+                <label for="concert-date">Date:</label>
+                <input type="date" id="concert-date" name="concert-date" required>
+                
+                <label for="ticket-price">Price:</label>
+                <input type="number" id="ticket-price" name="ticket-price" required>
+                
+                <label for="ticket-quantity">Quantity:</label>
+                <input type="number" id="ticket-quantity" name="ticket-quantity" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <button type="submit">List Ticket</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
